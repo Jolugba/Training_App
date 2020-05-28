@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.ParentSignUpActivity">
+
+    <ImageView
+        android:id="@+id/parentImgReg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_undraw_back_to_school_inwc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/parentSignUpText"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/register_as_parent"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parentImgReg" />
+
+    <EditText
+        android:id="@+id/parentEmailSignUp"
+        style="@style/landEditTextStyle"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:hint="@string/enter_email_address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parentNameSignUp" />
+
+    <EditText
+        android:id="@+id/parentPasswordSignUp"
+        style="@style/landEditTextStyle"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parentEmailSignUp" />
+
+    <TextView
+        android:id="@+id/parentLoginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:onClick="goToLogin"
+        android:text="@string/login_here"
+        android:textColor="@color/textLinkColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parentRegisterButton" />
+
+    <Button
+        android:id="@+id/parentRegisterButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/button_background"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parentPasswordSignUp" />
+
+    <EditText
+        android:id="@+id/parentNameSignUp"
+        style="@style/landEditTextStyle"
+        android:layout_marginTop="24dp"
+        android:drawableStart="@drawable/ic_account_circle_black_24dp"
+        android:hint="@string/enter_fullname"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parentImgReg" />
+
+    <TextView
+        android:id="@+id/alreadyAuserText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/already_have_an_account"
+        app:layout_constraintBaseline_toBaselineOf="@+id/parentLoginLink"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="102dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/parentSignUpText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

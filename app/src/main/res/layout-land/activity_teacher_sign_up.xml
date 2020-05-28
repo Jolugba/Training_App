@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.TeacherSignUpActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.TeacherSignUpActivity">
+
+    <ImageView
+        android:id="@+id/teacherImgReg"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_undraw_educator_oxfm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/teacherSignUpText"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/register_as_a_teacher"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacherImgReg" />
+
+    <EditText
+        android:id="@+id/teacherEmailSignUp"
+        style="@style/teacherEditTextStyle"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:hint="@string/enter_email_address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacherNameSignUp" />
+
+    <EditText
+        android:id="@+id/teacherPasswordSignUp"
+        style="@style/teacherEditTextStyle"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacherSignUpNum" />
+
+    <TextView
+        android:id="@+id/teacherLoginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:onClick="goToLogin"
+        android:text="@string/login_here"
+        android:textColor="@color/textLinkColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacherRegisterButton" />
+
+    <Button
+        android:id="@+id/teacherRegisterButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountCharged" />
+
+    <EditText
+        android:id="@+id/teacherNameSignUp"
+        style="@style/teacherEditTextStyle"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_account_circle_black_24dp"
+        android:hint="@string/enter_fullname"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacherSignUpText" />
+
+    <TextView
+        android:id="@+id/alreadyAuserText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/already_have_an_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacherRegisterButton" />
+
+    <EditText
+        android:id="@+id/teacherSignUpNum"
+        style="@style/teacherEditTextStyle"
+        android:drawableStart="@drawable/ic_phone_black_24dp"
+        android:ems="10"
+        android:hint="@string/enter_phone_number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacherEmailSignUp" />
+
+        <EditText
+            android:id="@+id/addSubject"
+            style="@style/teacherEditTextStyle"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_collections_bookmark_black_24dp"
+            android:hint="@string/chose_your_subject"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teacherPasswordSignUp" />
+
+        <EditText
+            android:id="@+id/amountCharged"
+            style="@style/teacherEditTextStyle"
+            android:drawableStart="@drawable/ic_branding_watermark_black_24dp"
+            android:ems="10"
+            android:hint="@string/enter_amount"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addSubject" />
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="171dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="116dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/teacherImgReg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    </layout>

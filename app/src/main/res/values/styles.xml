@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- this is the welcome screen Theme. -->
+    <style name="welcomeScreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <!-- this is the splash theme  Theme. -->
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@drawable/splash_screen_backgroud</item>
+
+    </style>
+    <!-- this is the user dash board Theme. -->
+    <style name="UserConsoleTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- this is the portrait edit text  Style. -->
+    <style name="editTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:ems">10</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+
+    <!-- this is the teacher sign up edit text Style. -->
+    <style name="teacherEditTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:ems">10</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+    <!-- this is the landscape edit text Style. -->
+    <style name="landEditTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:ems">10</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+    <!-- this is the sign up text Style. -->
+    <style name="signUpOptionTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="introText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">auto</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- this is the button Style. -->
+    <style name="Widget.AppCompat.Button.Colored.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">60dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginEnd">60dp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+
+</resources>

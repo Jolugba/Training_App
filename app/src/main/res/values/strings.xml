@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">HOME TEACH</string>
+    <string name="home_teach">HOME TEACH</string>
+    <string name="start">start</string>
+    <string name="learning_at_your_comfort">You can learn at your own comfort</string>
+    <string name="welcome">Welcome</string>
+    <string name="login">Login</string>
+    <string name="button">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="register_here">Register here</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="enter_password">Enter password</string>
+    <string name="userimage">userImage</string>
+    <string name="an_admin">An admin</string>
+    <string name="welcome_please_tap_the_image_below_to">Welcome,please tap the image below to</string>
+    <string name="a_parent">A parent</string>
+    <string name="a_teacher">A teacher</string>
+    <string name="sign_up_as">Sign up as</string>
+    <string name="teacher">Teacher Image</string>
+    <string name="parent">parentImage</string>
+    <string name="admin">AdminImage</string>
+    <string name="register_as_admin">Register as admin</string>
+    <string name="only_admins_can_have_access">Only admins can have access</string>
+    <string name="admin_login">admin Login</string>
+    <string name="enter_fullname">Enter fullname</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login_here">Login here</string>
+    <string name="register_as_parent">Register as parent</string>
+    <string name="register_as_a_teacher">Register as teacher</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="chose_your_subject">Enter your subject</string>
+    <string name="enter_amount">Enter years of experience</string>
+    <string name="next_btn_label">Next</string>
+    <string name="start_app_btn_label">Start</string>
+</resources>

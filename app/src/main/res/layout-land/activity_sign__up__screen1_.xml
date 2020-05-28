@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SignUpScreenActivity">
+
+    <TextView
+        android:id="@+id/signUpOption"
+        style="@style/introText"
+        android:text="@string/sign_up_as"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introText" />
+
+    <ImageView
+        android:id="@+id/teacherImage"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/teacher"
+        android:onClick="goToRegisterTeacher"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/parentImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpOption"
+        app:srcCompat="@drawable/ic_undraw_educator_oxfm" />
+
+    <TextView
+        android:id="@+id/teacherText"
+        style="@style/signUpOptionTextStyle"
+        android:layout_marginTop="4dp"
+        android:text="@string/a_teacher"
+        app:layout_constraintEnd_toEndOf="@+id/teacherImage"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="@+id/teacherImage"
+        app:layout_constraintTop_toBottomOf="@+id/teacherImage" />
+
+    <TextView
+        android:id="@+id/parentText"
+        style="@style/signUpOptionTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/a_parent"
+        app:layout_constraintEnd_toEndOf="@+id/parentImage"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="@+id/parentImage"
+        app:layout_constraintTop_toBottomOf="@+id/parentImage" />
+
+    <ImageView
+        android:id="@+id/parentImage"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/parent"
+        android:onClick="goToRegisterParent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/teacherImage"
+        app:layout_constraintTop_toBottomOf="@+id/signUpOption"
+        app:srcCompat="@drawable/ic_undraw_back_to_school_inwc" />
+
+    <TextView
+        android:id="@+id/introText"
+        style="@style/introText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/welcome_please_tap_the_image_below_to"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
